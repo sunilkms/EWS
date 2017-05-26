@@ -1,8 +1,11 @@
- Service Pathparam(
+#Author: Sunil Chauhan
+#this script Add task to using mailbox using app Impersonation Rights
+
+param(
 $userName=$cred.UserName,
 $password=$cred.GetNetworkCredential().password,
 $impdUser="sunil.chauhan@xyz.com",
-$EWSServicePath = "C:\Program Files\Microsoft\Exchange\Web Services\2.0\Microsoft.Exchange.WebServices.dll",#
+$EWSServicePath = "C:\Program Files\Microsoft\Exchange\Web Services\2.0\Microsoft.Exchange.WebServices.dll",
 $EWSurl = "https://outlook.office365.com/EWS/Exchange.asmx",
 $duedate=$(get-date).adddays(2)
 )
