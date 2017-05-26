@@ -7,10 +7,10 @@
 # can also delete subfolder under a specific folder.
 #Usage Example:
 #Empty Recover Deleted Items Folder From user Mailbox "Testuser@xzy.com"
-#>.\ClearDumpstersItems-Ews.ps1 -Mailbox "Testuser@xzy.com" -Deletions:$true -admin "admin@xyz.com" -pass "adminpass"
+#>.\CleanUp-Mailbox-Purge-Deletions-Folders.ps1 -Mailbox "Testuser@xzy.com" -Deletions:$true -admin "admin@xyz.com" -pass "adminpass"
 
 #Empty purges Folder From user Mailbox "Testuser@xzy.com"
-#>.\ClearDumpstersItems-Ews.ps1 -Mailbox "Testuser@xzy.com" -Purges:$true -admin "admin@xyz.com" -pass "adminpass"
+#>.\CleanUp-Mailbox-Purge-Deletions-Folders.ps1 -Mailbox "Testuser@xzy.com" -Purges:$true -admin "admin@xyz.com" -pass "adminpass"
 #=====================================================================================================
 
 param (
