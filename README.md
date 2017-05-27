@@ -1,4 +1,4 @@
-## This repo contains scripts using EWS (Exchange Web Service) API
+## This repo contains Powershell scripts build using EWS (Exchange Web Service) API
 
 Working with Exchange Mailbox using EWS managed API
 
