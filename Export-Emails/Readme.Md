@@ -15,3 +15,6 @@ This script can be used where you wants to restore items from user mailbox purge
 
  Usage Example 2: to export items from Purges folder run the script with below paramiters.
  >.\Export-Email-Ews.ps1 -export $true -folder Deletions -itemsView 10 -mailbox test@user.com -dir "D:\Deletions\" -userName admin@user.com -password Pass -export $true
+
+For More Details on this plz checkout post on this script here:
+http://www.sunilchauhan.info/2017/02/exporting-emails-from-office-365-and.html
