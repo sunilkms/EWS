@@ -1,12 +1,15 @@
 #region - Information- -------------------------------------------------------------------------    
 #--------------------------------------------------------------------
-# Project Scope: Setup a new category in the mailbox and create rule
+# Project Scope: Setup a new category in the mailbox and create rule, the rule will tag the messages
+# messages received from the external source
+#
 # Author: sunil chauhan <sunilkms@gmail.com>
 # 
 # How to use this script
 # Requirement: 
-# 1) - Service Account with application impersonation account and Exchange admin rights to mange 
-# inbox rules update the service account the Environmental variable section
+# 1) - Service account with application impersonation and Exchange admin rights to manage 
+# inbox rules,
+# 2) - update the service account the Environmental variable section
 # 2) - Install EWS Managed API and update the url in Environmental variable section
 # 
 # USAGE Example:
