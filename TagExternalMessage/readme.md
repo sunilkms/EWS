@@ -1,7 +1,6 @@
-##### Project Scope: Setup a new category in the mailbox and create rule that assign external message category to email 
+##### Project Scope: Setup a new category in the mailbox and create rule that assign external message category to email received the external source
 
 How to use this script:
-
 ##### This script has the following Requirement:
 
 - Service Account with application impersonation account and Exchange admin rights to mange 
