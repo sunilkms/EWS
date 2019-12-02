@@ -116,8 +116,7 @@ Write-Host "Cagetories not found in the mailbox" -ForegroundColor Yellow
 Function SetupInboxRule {
 param($mailbox)
 New-InboxRule -Mailbox $mailbox -ApplyCategory "MSG FROM EXTERNAL SOURCE" `
--HeaderContainsWords "X-MS-Exchange-Organization-AuthAs: Anonymous" -Name "TAG EXTERNAL MSG:Do not delete this rule, created by Administrator"`
--ExceptIfHeaderContainsWords "mailrelay.int.nokia.com"
+-HeaderContainsWords "X-MS-Exchange-Organization-AuthAs: Anonymous" -Name "TAG EXTERNAL MSG:Do not delete this rule, created by Administrator"
 }
 Function SetUpCategoryandRule {
 param ($mailbox,$Category)
