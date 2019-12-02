@@ -154,7 +154,7 @@ if ($mbxcat) {
             }
 if ($CatAdditionSuccess){
 "Creating Mailbox rule"
-$Rulename = $Category + " [Do not delete created by admin]"
+$Rulename = $Category + " [Do not delete created by Administrator]"
 New-InboxRule -Mailbox $mailbox -ApplyCategory $Category -HeaderContainsWords "X-MS-Exchange-Organization-AuthAs: Anonymous"`
  -Name $RuleName # -whatif
  }
