@@ -156,7 +156,7 @@ if ($CatAdditionSuccess){
 "Creating Mailbox rule"
 $Rulename = $Category + " [Do not delete created by admin]"
 New-InboxRule -Mailbox $mailbox -ApplyCategory $Category -HeaderContainsWords "X-MS-Exchange-Organization-AuthAs: Anonymous"`
- -Name $RuleName -ExceptIfHeaderContainsWords "mailrelay.int.nokia.com" # -whatif
+ -Name $RuleName # -whatif
  }
 }
 else {"Mailbox doesn't exist $mailbox"}
