@@ -123,9 +123,9 @@ Function SetupInboxRule {
 param($mailbox,$Category)
 
 Write-Host "Creating a new inbox rule for $mailbox" -ForegroundColor Yellow
-$Rulename = "Categorise email from external source [Do not delete or disable created by Administrator]"
+$Rulename = "Categorise emails from external source [Do not delete or disable created by Administrator]"
 New-InboxRule -Mailbox $mailbox -ApplyCategory $Category -HeaderContainsWords "X-MS-Exchange-Organization-AuthAs: Anonymous"`
- -Name $RuleName -ExceptIfHeaderContainsWords "mailrelay.int.nokia.com","hybrid2.ext.net.nokia.com" -whatif
+ -Name $RuleName # -whatif
 
 }
 Function SetUpExternalEmailCategoryForUser {
